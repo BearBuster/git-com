@@ -1,1 +1,28 @@
-<p>news works!</p>
+<div style="max-width: 1630px;margin: auto;padding-top: 60px;flex-wrap: wrap; display: flex;justify-content: space-between">
+  <mat-card style="display: flex;justify-content: space-between;margin-bottom: 20px;max-width: 390px;background: #333; color: white" *ngFor="let news of newsList">
+    <mat-card-header>
+      <mat-card-title>{{news.title}}</mat-card-title>
+      <mat-card-subtitle>Author {{news.author}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="news.urlToImage" style="margin-top: 20px; margin-bottom: 20px">
+    <mat-card-content>
+      <p>{{news.content}}</p>
+      <p>{{news.description}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-card-actions align="end">
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+      <mat-card-actions >
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+<!--        <button mat-button disabled>LIKE</button>-->
+<!--        <button mat-button disabled>SHARE</button>-->
+<!--      <h5 style="margin-right: 35px; color: #ececec">-->
+<!--        {{news.publishedAt}}-->
+<!--      </h5>-->
+    </mat-card-actions>
+  </mat-card>
+</div>
