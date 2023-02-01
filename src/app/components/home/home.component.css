@@ -1,0 +1,65 @@
+.hero-text {
+  font-size: 5vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  font-weight: 600;
+  top: 7vw;
+  left: 10%;
+  width: 35vw;
+  line-height: 1.2;
+}
+.hero-text2 {
+  font-size: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  font-weight: 600;
+  top: 25vw;
+  left: 10%;
+  width: 35vw;
+  line-height: 1.2;
+  color: rgb(156, 156, 156);
+}
+.hero-image {
+  width: 50vw;
+  float: right;
+  margin-top: 3vw;
+}
+.hero {
+  width: 95%;
+}
+.highlight {
+  color: rgb(40, 207, 152);
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+.home-body {
+  width: 70vw;
+  margin: auto;
+}
+.home-body h1 {
+  font-size: 50px;
+  font-weight: bold;
+  width: 35vw;
+  line-height: 1.5;
+}
+.btn-hero {
+  position: absolute;
+  top: 32vw;
+  left: 10vw;
+  width: 15vw;
+  height: 3vw;
+  background-color: rgb(40, 207, 152);
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0px 0px 10px 5px rgb(96, 136, 123);
+}
+button:active {
+  background-color: rgb(65, 190, 149);
+}
