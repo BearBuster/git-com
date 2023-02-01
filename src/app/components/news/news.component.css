@@ -1,0 +1,22 @@
+mat-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  max-width: 32%;
+  background: #333;
+  color: white;
+}
+
+.container {
+  max-width: 1630px;
+  margin: auto;
+  padding-top: 60px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  margin-top: 20px;
+  margin-bottom: 20px
+}

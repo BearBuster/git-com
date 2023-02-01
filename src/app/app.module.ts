@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AuthGuard } from './services/AuthGuard.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRotues: Routes = [
   {path: '', component: HomeComponent},
@@ -35,7 +36,8 @@ const appRotues: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RouterModule.forRoot(appRotues)
+    RouterModule.forRoot(appRotues),
+    HttpClientModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
