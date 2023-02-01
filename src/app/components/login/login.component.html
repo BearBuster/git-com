@@ -1,2 +1,23 @@
-
-  
+<div class="background">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+        <div class="form_container">
+            <div class="row">
+                <h1>Login Page!</h1>
+                <h5>Login with your details</h5>
+            </div>
+            <div class="row">
+                <input type="text" placeholder="User Name" name="username" ngModel #first="ngModel">
+            </div>
+            <div class="row">
+                <input type="password" placeholder="Password" name="password" ngModel #second="ngModel">
+            </div>
+            <div class="row left">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="row">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </form>
+</div>

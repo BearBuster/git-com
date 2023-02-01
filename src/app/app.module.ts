@@ -12,6 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AuthGuard } from './services/AuthGuard.service';
+import { FormsModule } from "@angular/forms";
+import { Auth } from './services/Auth.service';
 
 const appRotues: Routes = [
   {path: '', component: HomeComponent},
@@ -35,9 +37,10 @@ const appRotues: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RouterModule.forRoot(appRotues)
+    RouterModule.forRoot(appRotues),
+    FormsModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, Auth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
