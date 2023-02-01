@@ -3,6 +3,12 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: #000;
+    margin-top: 100px;
+    height: auto;
+    background: #67B26F;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+    background: linear-gradient(to right, #4ca2cd, #67B26F);
+    border-radius: 30px;
 }
 
 .card {
@@ -34,15 +40,6 @@ body {
 
 table {
     table-layout: fixed;
-}
-
-.user-profile {
-  margin-top: 100px;
-  height: auto;
-  background: #67B26F;
-  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
-  background: linear-gradient(to right, #4ca2cd, #67B26F);
-  border-radius: 30px;
 }
 
 
