@@ -25,4 +25,7 @@ import {
     ]),
   ],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  path: string = "src/app/resources/img/qwe.png";
+
+}

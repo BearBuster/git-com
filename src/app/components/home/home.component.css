@@ -21,8 +21,9 @@
 }
 .hero-image {
   width: 50vw;
-  float: right;
   margin-top: 3vw;
+  position: absolute;
+  right: 4vw;
 }
 .hero {
   width: 95%;
