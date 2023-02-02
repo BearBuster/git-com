@@ -15,6 +15,8 @@ import { AuthGuard } from './services/AuthGuard.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 import { Auth } from './services/Auth.service';
+import { FooterComponent } from './components/footer/footer.component';
+import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 
 const appRotues: Routes = [
   {path: '', component: HomeComponent},
@@ -32,7 +34,8 @@ const appRotues: Routes = [
     ProfileComponent,
     NewsComponent,
     HeaderComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +43,10 @@ const appRotues: Routes = [
     MaterialModule,
     RouterModule.forRoot(appRotues),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
-  providers: [AuthGuard, Auth],
+  providers: [AuthGuard, Auth,  MatIconRegistry],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

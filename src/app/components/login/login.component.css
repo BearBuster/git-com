@@ -7,7 +7,7 @@
 }
 .background{
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 145px);
     display: flex;
     justify-content: center;
     align-items: center;

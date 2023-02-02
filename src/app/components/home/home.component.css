@@ -35,6 +35,7 @@
 .home-container {
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh - 145px);
 }
 .home-body {
   width: 70vw;
