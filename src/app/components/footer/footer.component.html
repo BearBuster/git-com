@@ -11,7 +11,8 @@
                     <li class="footer-navline"><a class="footer-navlink" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
                     <li class="footer-navline"><a class="footer-navlink" routerLink="/news" routerLinkActive="active">News</a></li>
                     <li class="footer-navline"><a class="footer-navlink" routerLink="/profile" routerLinkActive="active">Profile</a></li>
-                    <li class="footer-navline"><a class="footer-navlink" routerLink="/login" routerLinkActive="active">Login</a></li>
+                    <li *ngIf="!auth.checkLogin(); else logout" class="footer-navline"><a routerLink="/login" routerLinkActive="active" class="footer-navlink">Login</a></li>
+                    <ng-template #logout><li class="footer-navline"><a routerLink="/login" (click)="auth.logout()" class="footer-navlink">Logout</a></li></ng-template>
                 </ul>
             </nav>
         </div>
