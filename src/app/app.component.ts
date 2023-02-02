@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(){
-    localStorage.setItem("profileKey","4")
-  }
+  constructor(){}
   title = 'git-com';
 }
